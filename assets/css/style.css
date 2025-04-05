@@ -1494,7 +1494,7 @@ button {
 }
 .ul-banner-title1 {
   font-weight: 700;
-  font-size: clamp(24px, 3.2vw, 50px);
+  font-size: clamp(20px, 3.2vw, 26px);
   font-family: var(--font-quicksand);
   line-height: 100%;
   letter-spacing: -0.02em;
@@ -1677,6 +1677,39 @@ button {
   object-fit: cover;
   border-radius: 50%;
 }
+.ul-banner-2-slide1 {
+  padding: clamp(100px, 12.35vw, 235px) clamp(15px, 3.15vw, 60px);
+  position: relative;
+  z-index: 1;
+}
+.ul-banner-2-slide1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /*background: linear-gradient(101.64deg, rgba(235, 83, 16, 0.9) 1.87%, rgba(235, 83, 16, 0.1) 98.72%);*/
+  pointer-events: none;
+}
+.ul-banner-2-slide1 .ul-banner-txt {
+  padding: 10px;
+}
+.ul-banner-2-slide1 .ul-banner-sub-title {
+  color: var(--white);
+}
+.ul-banner-2-slide1 .ul-banner-sub-title::before {
+  background-color: var(--white);
+}
+.ul-banner-2-slide1 .ul-banner-title {
+  line-height: 1.2;
+}
+.ul-banner-2-slide1 .ul-btn {
+  background-color: transparent;
+  border-color: var(--white);
+}
+.ul-banner-2-slide1 .ul-btn:hover {
+  background-color: var(--white);
+  color: var(--ul-black);
+}
 .ul-banner-2-slide {
   padding: clamp(100px, 12.35vw, 235px) clamp(15px, 3.15vw, 60px);
   position: relative;
@@ -1701,7 +1734,7 @@ button {
   object-fit: cover;
 }
 .ul-banner-2-slide .ul-banner-txt {
-  padding: 0;
+  padding: 10px;
 }
 .ul-banner-2-slide .ul-banner-sub-title {
   color: var(--white);
@@ -1719,6 +1752,13 @@ button {
 .ul-banner-2-slide .ul-btn:hover {
   background-color: var(--white);
   color: var(--ul-black);
+}
+.ul-banner-txt-bg {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(2px); /* Optional for a glassy effect */
+  display: inline-block; /* Keeps the box tight around content */
 }
 
 .ul-about {
