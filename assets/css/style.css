@@ -1727,6 +1727,7 @@ button {
 .ul-banner-2-slide-bg-img {
   position: absolute;
   inset: 0;
+ 
   z-index: -2;
   pointer-events: none;
   height: 100%;
